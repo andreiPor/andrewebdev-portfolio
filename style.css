@@ -1,0 +1,321 @@
+/* =======================
+   Global Styles
+   ======================= */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0e1219;
+  color: #e0e0e0;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* =======================
+   Header & Footer
+   ======================= */
+#headerMain,
+footer {
+  background-color: #1a1f2b;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.nav-link,
+.navbar-brand,
+footer,
+footer a {
+  color: #e0e0e0;
+  transition: color 0.4s ease;
+}
+
+.nav-link:hover,
+footer .social-icon:hover {
+  color: #0dcaf0 !important;
+}
+
+/* =======================
+   Mobile Menu
+   ======================= */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  transition: right 0.3s ease-in-out, background-color 0.4s ease;
+  z-index: 9999;
+  background-color: #1a1f2b;
+}
+
+.mobile-menu.show {
+  right: 0;
+}
+
+/* =======================
+   Hero Section
+   ======================= */
+.hero-section {
+  background: linear-gradient(135deg, #1f2733 0%, #0e1219 100%);
+  padding: 6rem 0;
+  text-align: center;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* =======================
+   Profile Images
+   ======================= */
+.profile-img,
+.profile-round {
+  width: 200px !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3) !important;
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+.profile-round:hover {
+  transform: scale(1.05) !important;
+  box-shadow: 0 0 25px rgba(13, 202, 240, 0.5) !important;
+}
+
+/* =======================
+   Sections
+   ======================= */
+section {
+  padding: 5rem 0;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+input,
+textarea {
+  transition: color 0.4s ease;
+}
+
+/* =======================
+   Section Titles
+   ======================= */
+h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+h2 span {
+  color: #0dcaf0;
+}
+
+/* =======================
+   Skills Cards
+   ======================= */
+.skill-card {
+  background: linear-gradient(145deg, #1f2733, #181c25);
+  border-radius: 12px;
+  padding: 1.5rem 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.4s ease, color 0.4s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(13, 202, 240, 0.4);
+}
+
+.skill-card img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 0.5rem;
+}
+
+.skill-card h5 {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+/* =======================
+   Project Cards
+   ======================= */
+.project-card {
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(145deg, #1f2733, #181c25);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.4s ease, background 0.4s ease, color 0.4s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(13, 202, 240, 0.4);
+}
+
+.project-card .card-title {
+  color: #0dcaf0;
+}
+
+.project-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card .card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card .btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+/* =======================
+   Buttons
+   ======================= */
+.btn-info {
+  background: linear-gradient(90deg, #0dcaf0, #6610f2);
+  border: none;
+  transition: transform 0.3s ease, box-shadow 0.4s ease, color 0.4s ease;
+}
+
+.btn-info:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(13, 202, 240, 0.5);
+}
+
+/* =======================
+   Contact Section
+   ======================= */
+#contactForm {
+  background: #1a1f2b;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+#contactForm label,
+#contactForm input,
+#contactForm textarea {
+  color: #e0e0e0;
+  transition: color 0.4s ease;
+}
+.cv-modal {
+  display: none;
+  position: fixed;
+  z-index: 1050;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.cv-modal-content {
+  position: relative;
+  margin: 5% auto;
+  width: 90%;
+  max-width: 800px;
+}
+
+.cv-modal-content img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.cv-modal-close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 2rem;
+  color: #0dcaf0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.cv-modal-close:hover {
+  color: #ffffff;
+}
+
+/* =======================
+   Footer
+   ======================= */
+footer {
+  color: #ffffff;
+  transition: color 0.4s ease, background 0.4s ease;
+}
+
+/* =======================
+   Hero + About Unified Section
+   ======================= */
+#sectionHeroAbout {
+  background: linear-gradient(135deg, #1f2733 0%, #0e1219 100%);
+  border-radius: 12px;
+  padding: 5rem 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+#sectionHeroAbout h1,
+#sectionHeroAbout p {
+  color: #e0e0e0;
+}
+
+#sectionHeroAbout .profile-round {
+  width: 180px !important;
+  height: 180px !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.4s ease;
+}
+
+#sectionHeroAbout .profile-round:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(13, 202, 240, 0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 0;
+  }
+
+  .profile-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .skill-card {
+    margin-bottom: 1rem;
+  }
+
+  #sectionHeroAbout {
+    padding: 3rem 1rem;
+  }
+
+  #sectionHeroAbout .profile-round {
+    width: 140px !important;
+    height: 140px !important;
+    margin-bottom: 1.5rem;
+  }
+
+  #sectionHeroAbout .col-md-8 {
+    text-align: center;
+  }
+
+  #sectionHeroAbout .btn {
+    width: 100%;
+  }
+}
