@@ -1,9 +1,8 @@
-🌐AndreWebDev Portfolio 
+🌐AndreWebDev Portfolio
 
 Welcome! 👋 I’m AndreWebDev, a web developer passionate about creating sleek, interactive, and responsive websites. This is my personal portfolio, built to showcase my skills and projects.
 
 🔗 Live Demo: [View Portfolio](https://andreipor.github.io/portfolio/)
-
 
 🛠 Technologies Used
 
@@ -27,6 +26,6 @@ Skills Section – Interactive skill cards showcasing technologies
 
 Projects Section – Project showcase with live links
 
-Contact Form –  Contact form 
+Contact Form – Contact form
 
 CV Modal – Clickable CV popup

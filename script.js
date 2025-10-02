@@ -26,7 +26,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// CV Modal Logic
+// ===========cv modal logic==============
 const btnViewCV = document.getElementById("btnViewCV");
 const cvModal = document.getElementById("cvModal");
 const cvModalClose = document.getElementById("cvModalClose");
@@ -61,4 +61,3 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 3000);
   });
 });
-
