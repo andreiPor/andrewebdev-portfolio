@@ -44,3 +44,21 @@ window.addEventListener("click", (e) => {
     cvModal.style.display = "none";
   }
 });
+
+// ===========modal for contact==============
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const modalEl = document.getElementById("messageModal");
+  const messageModal = new bootstrap.Modal(modalEl);
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    messageModal.show();
+
+    setTimeout(() => {
+      messageModal.hide();
+    }, 3000);
+  });
+});
+
