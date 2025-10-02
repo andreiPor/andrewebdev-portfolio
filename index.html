@@ -249,7 +249,6 @@
               name="contact"
               data-netlify="true"
             >
-              <!-- Hidden field required by Netlify Forms -->
               <input type="hidden" name="form-name" value="contact" />
 
               <div class="mb-3">
@@ -264,6 +263,7 @@
                   autocomplete="off"
                 />
               </div>
+
               <div class="mb-3">
                 <label for="contactEmail" class="form-label">Email</label>
                 <input
@@ -276,6 +276,7 @@
                   autocomplete="off"
                 />
               </div>
+
               <div class="mb-3">
                 <label for="contactMessage" class="form-label">Message</label>
                 <textarea
@@ -288,6 +289,7 @@
                   autocomplete="off"
                 ></textarea>
               </div>
+
               <button type="submit" class="btn btn-info w-100">
                 Send Message
               </button>
@@ -296,6 +298,16 @@
         </div>
       </div>
     </section>
+
+    <!-- Modal -->
+    <div id="messageModal" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center p-4">
+          <h5 class="modal-title">Message Sent!</h5>
+          <p>Thank you for reaching out. I will get back to you soon.</p>
+        </div>
+      </div>
+    </div>
 
     <footer class="bg-dark text-light py-3 text-center">
       <div class="mb-2">
