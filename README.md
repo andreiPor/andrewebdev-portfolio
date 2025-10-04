@@ -2,7 +2,7 @@
 
 Welcome! 👋 I’m AndreWebDev, a web developer passionate about creating sleek, interactive, and responsive websites. This is my personal portfolio, built to showcase my skills and projects.
 
-🔗 Live Demo: [View Portfolio](https://andreipor.github.io/portfolio/)
+🔗 Live Demo: [[View Portfolio](https://andreipor.github.io/portfolio/)](https://andreipor.github.io/andrewebdev-portfolio/)
 
 🛠 Technologies Used
 
