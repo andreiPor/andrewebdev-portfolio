@@ -58,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     setTimeout(() => {
       messageModal.hide();
+      form.reset(); //  reset
     }, 3000);
   });
 });
